@@ -1,0 +1,120 @@
+//Constants and most used styles
+$yellow: hsl(47, 88%, 63%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 7%);
+.bg-yellow {
+    background-color: $yellow;
+}
+.bg-white {
+    background-color: $white;
+}
+.bg-black {
+    background-color: $black;
+}
+.bg-grey {
+    background-color: $grey;
+}
+.ft-yellow {
+    color: $yellow;
+}
+.ft-white {
+    color: $white;
+}
+.ft-black {
+    color: $black;
+}
+.ft-grey {
+    color: $grey;
+}
+.badge {
+    padding: 5px 10px 5px;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Figtree";
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+//Customization of page style
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: "Figtree";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+        box-shadow: 7px 7px $black;
+        border: 1px solid $black;
+        border-radius: 10px;
+        transition: box-shadow 0.15s ease-in-out;
+        width: 80%;
+        height: 70%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            box-shadow: 0 0;
+        }
+        .card-img {
+            flex: 45%;
+            background-image: url(../assets/images/illustration-article.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: inherit;
+        }
+        .card-details {
+            flex: 55%;
+            .publish-date {
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+            .article-title {
+                font-weight: 800;
+                margin: 0;
+                color: $black;
+                transition: color 0.1s ease-in-out;
+                &:active {
+                    color: $yellow;
+                }
+            }
+            .article-desc {
+                font-size: 0.9rem;
+                line-height: 1.3rem;
+            }
+            .publisher {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                .publisher-avatar {
+                    width: 30px;
+                }
+                .publisher-name {
+                    font-size: 0.9rem;
+                    font-weight: 800;
+                    margin-left: 15px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    html, body {
+        .card {
+            width: 50% !important;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    html, body {
+        .card {
+            width: 22.5% !important;
+        }
+    }
+}

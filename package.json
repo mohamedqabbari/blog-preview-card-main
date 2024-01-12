@@ -1,0 +1,23 @@
+{
+  "name": "blog-preview-card-main",
+  "version": "1.0.0",
+  "description": "Blog Preview Card: Frontend Mentor Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass styles/style.scss styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedqabbari/blog-preview-card-main.git"
+  },
+  "author": "Mohammed Qabbari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedqabbari/blog-preview-card-main/issues"
+  },
+  "homepage": "https://github.com/mohamedqabbari/blog-preview-card-main#readme",
+  "devDependencies": {
+    "sass": "^1.69.7"
+  }
+}
