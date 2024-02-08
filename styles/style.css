@@ -58,7 +58,7 @@ html .card, body .card {
   border-radius: 10px;
   transition: box-shadow 0.15s ease-in-out;
   width: 80%;
-  height: 70%;
+  height: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -68,10 +68,13 @@ html .card:hover, body .card:hover {
 }
 html .card .card-img, body .card .card-img {
   flex: 45%;
-  background-image: url(../assets/images/illustration-article.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: inherit;
+}
+html .card .card-img img, body .card .card-img img {
+  border-radius: inherit;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 html .card .card-details, body .card .card-details {
   flex: 55%;
@@ -85,6 +88,7 @@ html .card .card-details .article-title, body .card .card-details .article-title
   margin: 0;
   color: hsl(0, 0%, 7%);
   transition: color 0.1s ease-in-out;
+  cursor: pointer;
 }
 html .card .card-details .article-title:active, body .card .card-details .article-title:active {
   color: hsl(47, 88%, 63%);
